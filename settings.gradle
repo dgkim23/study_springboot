@@ -1,3 +1,6 @@
 rootProject.name = 'study_springboot'
 include 'ch02'
+include 'httpTransTest'
+include 'ch02_5'
+include 'ch03'
 
