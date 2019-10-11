@@ -1,16 +1,25 @@
-plugins {
-    id 'java'
+apply plugin: 'java'
+apply plugin: 'application'
+
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+apply from : 'gradle/lib.gradle'
+
+group = 'thecodinglive'
+version = '1.0.0'
+
+compileJava {
+    sourceCompatibility=1.8
+    targetCompatibility=1.8
 }
 
-group 'com.spring.boot'
-version '1.0-SNAPSHOT'
-
-sourceCompatibility = 1.8
-
-repositories {
-    mavenCentral()
+compileTestJava {
+    sourceCompatibility=1.8
+    targetCompatibility=1.8
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+
