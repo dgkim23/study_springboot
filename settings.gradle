@@ -3,4 +3,6 @@ include 'ch02'
 include 'httpTransTest'
 include 'ch02_5'
 include 'ch03'
+include 'ch03-web'
+include 'ch04'
 
